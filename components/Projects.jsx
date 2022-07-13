@@ -25,12 +25,12 @@ function Projects() {
             projectUrl="/crypto"
           />
           <ProjectItem
-            title="Netflix Clone"
+            title="Netflix UI"
             backgroundImg={netflixImg}
             projectUrl="/netflix"
           />
           <ProjectItem
-            title="Twitch Clone"
+            title="Twitch UI"
             backgroundImg={twitchImg}
             projectUrl="/twitch"
           />
