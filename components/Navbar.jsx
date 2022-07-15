@@ -2,10 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { AiOutlineCodepen } from "react-icons/ai";
+import { FaTwitter } from "react-icons/fa";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
@@ -108,12 +109,15 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/assets/logo.svg"
-                width={87}
-                height={35}
-                alt="Tettei's logo"
-              />
+              <Link href="/">
+                <Image
+                  onClick={() => setIsNavOpen(false)}
+                  src="/assets/logo.svg"
+                  width={87}
+                  height={35}
+                  alt="Tettei's logo"
+                />
+              </Link>
               <div
                 onClick={handleNavbarToggle}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -138,7 +142,7 @@ const Navbar = () => {
                   Home
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#about">
                 <li
                   onClick={() => setIsNavOpen(false)}
                   className="py-4 text-sm"
@@ -146,7 +150,7 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#skills">
                 <li
                   onClick={() => setIsNavOpen(false)}
                   className="py-4 text-sm"
@@ -154,7 +158,7 @@ const Navbar = () => {
                   Skills
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#projects">
                 <li
                   onClick={() => setIsNavOpen(false)}
                   className="py-4 text-sm"
@@ -162,7 +166,7 @@ const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href="/">
+              <Link href="/#contact">
                 <li
                   onClick={() => setIsNavOpen(false)}
                   className="py-4 text-sm"
@@ -177,24 +181,51 @@ const Navbar = () => {
                 Let&apos;s connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <a
-                    href="https://www.linkedin.com/in/tettei-shahday-annang/"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <FaLinkedin />
-                  </a>
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsPersonLinesFill />
-                </div>
+                <a
+                  href="https://www.linkedin.com/in/tettei-shahday-annang/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/tetteis"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </a>
+                <a
+                  href="https://codepen.io/tetteis"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineCodepen />
+                  </div>
+                </a>
+                <a
+                  href="https://twitter.com/tetteis"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaTwitter />
+                  </div>
+                </a>
+                <a
+                  href="mailto:hey@tetteis.com"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <AiOutlineMail />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

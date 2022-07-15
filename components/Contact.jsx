@@ -1,9 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { AiOutlineCodepen } from "react-icons/ai";
+import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 
@@ -39,18 +40,51 @@ function Contact() {
               <div>
                 <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaLinkedin />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <FaGithub />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiOutlineMail />
-                  </div>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <BsPersonLinesFill />
-                  </div>
+                  <a
+                    href="https://www.linkedin.com/in/tettei-shahday-annang/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaLinkedinIn />
+                    </div>
+                  </a>
+                  <a
+                    href="https://github.com/tetteis"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaGithub />
+                    </div>
+                  </a>
+                  <a
+                    href="https://codepen.io/tetteis"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <AiOutlineCodepen />
+                    </div>
+                  </a>
+                  <a
+                    href="https://twitter.com/tetteis"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <FaTwitter />
+                    </div>
+                  </a>
+                  <a
+                    href="mailto:hey@tetteis.com"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+                      <AiOutlineMail />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>

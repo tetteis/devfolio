@@ -4,7 +4,7 @@ import React from "react";
 function Skills() {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
-      <div className="max-w-[1240] mx-auto flex flex-col justify-center h-full">
+      <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Skills
         </p>
@@ -21,7 +21,7 @@ function Skills() {
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h3>Tailwind CSS</h3>
+                <h3>Tailwind</h3>
               </div>
             </div>
           </div>
