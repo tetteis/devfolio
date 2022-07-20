@@ -26,9 +26,15 @@ const About = () => {
             (and it&apos;s endless list of frameworks). I enjoy coding and the
             challenge of learning something new everyday.
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer  ">
-            Check out some of my latest projects
-          </p>
+          <a
+            href="https://github.com/tetteis"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <p className="py-2 text-gray-600 underline cursor-pointer  ">
+              Check out what I&apos;ve been working on.
+            </p>
+          </a>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify center p-4 hover:scale-105 ease-in duration-300">
           <Image
