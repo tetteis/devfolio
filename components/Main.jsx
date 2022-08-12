@@ -4,15 +4,21 @@ import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { AiOutlineCodepen } from "react-icons/ai";
+import Image from "next/image";
 
 function Main() {
   return (
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
-          <p className="uppercase text-sm tracking-widest text-gray-600">
-            Let&apos;s build something together
-          </p>
+          <Image
+            className="rounded-full"
+            src="/assets/tettei-img.jpg"
+            width={170}
+            height={170}
+            alt="Tettei's profile picture"
+          />
+
           <h1 className="py-2 text-gray-700">
             Hey👋, I&apos;m <span className="text-[#5651e5]">Tettei</span>
           </h1>
