@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import CoderAnimation from "./CoderAnimation";
 
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
-        <div className="col-span-2">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-2 gap-8">
+        <div className="col-span-1">
           <p className="py-4 uppercase text-xl tracking-widest text-[#5651e5]">
             About
           </p>
@@ -36,14 +37,8 @@ const About = () => {
             </p>
           </a>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify center p-4 hover:scale-105 ease-in duration-300">
-          <Image
-            className="rounded-xl"
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"
-            alt="Tettei coding"
-            width={1000}
-            height={1000}
-          />
+        <div className="w-full h-auto m-auto flex items-center justify center p-4 ">
+          <CoderAnimation />
         </div>
       </div>
     </div>
