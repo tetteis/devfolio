@@ -5,6 +5,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { AiOutlineCodepen } from "react-icons/ai";
 import Image from "next/image";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 function Main() {
   return (
@@ -24,7 +25,17 @@ function Main() {
           </h1>
           <h1>Front-End Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            Building highly performant, scalable, reliable and production-ready
+            Building&nbsp;
+            <RoughNotationGroup show={true}>
+              <RoughNotation color="red">
+                highly performant,&nbsp;
+              </RoughNotation>
+              <RoughNotation color="#fdd641">scalable&nbsp;</RoughNotation>and{" "}
+              <br />
+              <RoughNotation color="green">
+                production-ready&nbsp;
+              </RoughNotation>
+            </RoughNotationGroup>
             web applications.
           </p>
           <div className="flex items-center justify-between max-w-[360px] m-auto py-4">

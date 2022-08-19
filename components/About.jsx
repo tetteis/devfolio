@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { RoughNotation } from "react-rough-notation";
 import CoderAnimation from "./CoderAnimation";
 
 const About = () => {
@@ -11,16 +12,19 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">I am not your normal developer</p>
+          <p className="py-2 text-white">
+            <RoughNotation type="highlight" show color="#21a2b9">
+              I am not your normal developer.
+            </RoughNotation>
+          </p>
           <p className="py-2 text-gray-600">
             I&apos;m Tettei Shahday-Annang. Gloria&apos;s husband, Kester&apos;s
-            dad and Sir Laydrown&apos;s son. I build scalable, reliable,
-            production-ready and highly performant web applications. In the past
-            7 years I&apos;ve built wordpress-based websites on part time basis.
-            I decided to learn JavaScript so I can take on React, and I&apos;s
-            blown away by its awesomeness. Since then, I haven&apos;t looked
-            back. Creating and fixing things on the web has become my main job
-            now.
+            dad and Sir Laydrown&apos;s kid. I build highly performant, scalable
+            and production-ready web applications. In the past 7 years I&apos;ve
+            built wordpress-based websites on part time basis. I decided to
+            learn JavaScript so I can take on React, and I&apos;s blown away by
+            its awesomeness. Since then, I haven&apos;t looked back. Creating
+            and fixing things on the web has become my main job now.
           </p>
           <p className="py-2 text-gray-600">
             I spend most of my day experimenting with HTML, CSS and JavaScript
@@ -32,8 +36,10 @@ const About = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <p className="py-2 text-gray-600 underline cursor-pointer  ">
-              Check out what I&apos;ve been working on.
+            <p className="py-2 text-gray-600 cursor-pointer  ">
+              <RoughNotation type="box" show color="#eb1700">
+                Check out what I&apos;ve been working on.
+              </RoughNotation>
             </p>
           </a>
         </div>
