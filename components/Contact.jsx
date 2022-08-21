@@ -7,6 +7,7 @@ import { AiOutlineCodepen } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { RoughNotation } from "react-rough-notation";
 
 function Contact() {
   return (
@@ -33,8 +34,15 @@ function Contact() {
                 <h2 className="py-2">Tettei Shahday-Annang</h2>
                 <p>Front-End Developer</p>
                 <p className="py-4">
-                  I am available for frelance or full-time position. Contact me
-                  and let&apos;s talk.
+                  I am available for{" "}
+                  <RoughNotation type="underline" color="#21a2b9" show>
+                    freelance
+                  </RoughNotation>{" "}
+                  or&nbsp;
+                  <RoughNotation type="underline" color="#eb1700" show>
+                    full-time position.&nbsp;
+                  </RoughNotation>
+                  Contact me and let&apos;s talk.
                 </p>
               </div>
               <div>
