@@ -13,7 +13,7 @@ const About = () => {
           <h2 className="py-4">Who I Am</h2>
           <RoughNotationGroup show={true}>
             <p className="py-2">
-              <RoughNotation type="highlight" color="gold">
+              <RoughNotation type="highlight" color="gold" multiline>
                 I am not your normal developer.
               </RoughNotation>
             </p>
@@ -38,7 +38,7 @@ const About = () => {
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                <RoughNotation type="box" color="#5651E5">
+                <RoughNotation type="box" color="#5651E5" multiline>
                   Check out what I&apos;ve been working on.
                 </RoughNotation>
               </a>
