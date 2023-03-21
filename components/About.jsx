@@ -1,6 +1,5 @@
-import Image from "next/image";
 import React from "react";
-import { RoughNotation } from "react-rough-notation";
+import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import CoderAnimation from "./CoderAnimation";
 
 const About = () => {
@@ -12,36 +11,39 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-white">
-            <RoughNotation type="highlight" show color="#21a2b9">
-              I am not your normal developer.
-            </RoughNotation>
-          </p>
-          <p className="py-2 text-gray-600">
-            I&apos;m Tettei Shahday-Annang. Gloria&apos;s husband, Kester&apos;s
-            dad and Sir Laydrown&apos;s kid. I build highly performant, scalable
-            and production-ready web applications. In the past 7 years I&apos;ve
-            built wordpress-based websites on part time basis. I decided to
-            learn JavaScript so I can take on React, and I&apos;s blown away by
-            its awesomeness. Since then, I haven&apos;t looked back. Creating
-            and fixing things on the web has become my main job now.
-          </p>
-          <p className="py-2 text-gray-600">
-            I spend most of my day experimenting with HTML, CSS and JavaScript
-            (and it&apos;s endless list of frameworks). I enjoy coding and the
-            challenge of learning something new everyday.
-          </p>
-          <a
-            href="https://github.com/tetteis"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <p className="py-2 text-gray-600 cursor-pointer  ">
-              <RoughNotation type="box" show color="#eb1700">
-                Check out what I&apos;ve been working on.
+          <RoughNotationGroup show={true}>
+            <p className="py-2">
+              <RoughNotation type="highlight" color="gold">
+                I am not your normal developer.
               </RoughNotation>
             </p>
-          </a>
+            <p className="py-2 text-gray-600">
+              I&apos;m Tettei Shahday-Annang. I build highly performant,
+              scalable and production-ready web applications. In the past 7
+              years I&apos;ve built wordpress-based websites on part time basis,
+              helping put online websites for individuals and small businesses.
+              I decided to learn JavaScript so I can take on React, and I&apos;s
+              blown away by its awesomeness. Since then, I haven&apos;t looked
+              back. Creating and fixing things on the web has become my main job
+              now.
+            </p>
+            <p className="py-2 text-gray-600">
+              I spend most of my day experimenting with HTML, CSS and JavaScript
+              (and it&apos;s endless list of frameworks). I enjoy coding and the
+              challenge of learning something new everyday.
+            </p>
+            <p className="py-2 text-gray-600 cursor-pointer">
+              <a
+                href="https://github.com/tetteis"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <RoughNotation type="box" color="#5651E5">
+                  Check out what I&apos;ve been working on.
+                </RoughNotation>
+              </a>
+            </p>
+          </RoughNotationGroup>
         </div>
         <div className="w-full h-auto m-auto flex items-center justify center p-4 ">
           <CoderAnimation />

@@ -144,3 +144,5 @@ function Skills() {
 }
 
 export default Skills;
+
+// html, css, tailwind, javascript, react, astr-o, firebase, react-query
