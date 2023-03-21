@@ -45,9 +45,9 @@ function Contact() {
                       color=" #5651E5"
                       padding={0}
                     >
-                      full-time position.&nbsp;
-                    </RoughNotation>
-                    Contact me and let&apos;s talk.
+                      full-time
+                    </RoughNotation>{" "}
+                    position. Contact me and let&apos;s talk.
                   </RoughNotationGroup>
                 </p>
               </div>
