@@ -22,7 +22,7 @@ const About = () => {
               scalable and production-ready web applications. In the past 7
               years I&apos;ve built wordpress-based websites on part time basis,
               helping put online websites for individuals and small businesses.
-              I decided to learn JavaScript so I can take on React, and I&apos;s
+              I decided to learn JavaScript so I can take on React, and I was
               blown away by its awesomeness. Since then, I haven&apos;t looked
               back. Creating and fixing things on the web has become my main job
               now.
