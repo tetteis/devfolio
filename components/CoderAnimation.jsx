@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from "react";
-// import { LottiePlayer } from "lottie-web";
 
 export default function CoderAnimation() {
   const ref = useRef(null);

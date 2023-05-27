@@ -11,7 +11,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 function Contact() {
   return (
-    <div id="contact" className="w-full lg:h-screen">
+    <section id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1240px] m-auto px-2 py-16 w-full">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
@@ -184,7 +184,7 @@ function Contact() {
           </Link>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

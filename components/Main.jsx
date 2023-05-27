@@ -9,7 +9,7 @@ import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 
 function Main() {
   return (
-    <div id="home" className="w-full h-screen text-center">
+    <main id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <Image
@@ -89,7 +89,7 @@ function Main() {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
 

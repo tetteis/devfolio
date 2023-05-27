@@ -67,27 +67,33 @@ const Navbar = () => {
         </Link>
 
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
-            </Link>
-            <Link href="/#about">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
-            </Link>
-            <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
-            </Link>
-            <Link href="/#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Projects
-              </li>
-            </Link>
-            <Link href="/#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
-                Contact
-              </li>
-            </Link>
-          </ul>
+          <nav>
+            <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+              <Link href="/">
+                <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              </Link>
+              <Link href="/#about">
+                <li className="ml-10 text-sm uppercase hover:border-b">
+                  About
+                </li>
+              </Link>
+              <Link href="/#skills">
+                <li className="ml-10 text-sm uppercase hover:border-b">
+                  Skills
+                </li>
+              </Link>
+              <Link href="/#projects">
+                <li className="ml-10 text-sm uppercase hover:border-b">
+                  Projects
+                </li>
+              </Link>
+              <Link href="/#contact">
+                <li className="ml-10 text-sm uppercase hover:border-b">
+                  Contact
+                </li>
+              </Link>
+            </ul>
+          </nav>
           <div onClick={handleNavbarToggle} className="md:hidden">
             <AiOutlineMenu size={25} />
           </div>
@@ -134,48 +140,50 @@ const Navbar = () => {
           </div>
 
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
-              <Link href="/">
-                <li
-                  onClick={() => setIsNavOpen(false)}
-                  className="py-4 text-sm"
-                >
-                  Home
-                </li>
-              </Link>
-              <Link href="/#about">
-                <li
-                  onClick={() => setIsNavOpen(false)}
-                  className="py-4 text-sm"
-                >
-                  About
-                </li>
-              </Link>
-              <Link href="/#skills">
-                <li
-                  onClick={() => setIsNavOpen(false)}
-                  className="py-4 text-sm"
-                >
-                  Skills
-                </li>
-              </Link>
-              <Link href="/#projects">
-                <li
-                  onClick={() => setIsNavOpen(false)}
-                  className="py-4 text-sm"
-                >
-                  Projects
-                </li>
-              </Link>
-              <Link href="/#contact">
-                <li
-                  onClick={() => setIsNavOpen(false)}
-                  className="py-4 text-sm"
-                >
-                  Contact
-                </li>
-              </Link>
-            </ul>
+            <nav>
+              <ul className="uppercase">
+                <Link href="/">
+                  <li
+                    onClick={() => setIsNavOpen(false)}
+                    className="py-4 text-sm"
+                  >
+                    Home
+                  </li>
+                </Link>
+                <Link href="/#about">
+                  <li
+                    onClick={() => setIsNavOpen(false)}
+                    className="py-4 text-sm"
+                  >
+                    About
+                  </li>
+                </Link>
+                <Link href="/#skills">
+                  <li
+                    onClick={() => setIsNavOpen(false)}
+                    className="py-4 text-sm"
+                  >
+                    Skills
+                  </li>
+                </Link>
+                <Link href="/#projects">
+                  <li
+                    onClick={() => setIsNavOpen(false)}
+                    className="py-4 text-sm"
+                  >
+                    Projects
+                  </li>
+                </Link>
+                <Link href="/#contact">
+                  <li
+                    onClick={() => setIsNavOpen(false)}
+                    className="py-4 text-sm"
+                  >
+                    Contact
+                  </li>
+                </Link>
+              </ul>
+            </nav>
 
             <div className="pt-40">
               <p className="uppercase tracking-widest text-[#5651e5]">
